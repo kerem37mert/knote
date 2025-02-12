@@ -1,10 +1,14 @@
 import { View, Text } from "react-native";
 
+// Components
+import DetailContainer from "../../components/DetailContainer";
+import Edit from "../../components/Edit";
+
 const Detail = () => {
     return(
-        <View>
-           <Text>Detail</Text> 
-        </View>
+        <DetailContainer>
+           <Edit />
+        </DetailContainer>
     ); 
 }
 

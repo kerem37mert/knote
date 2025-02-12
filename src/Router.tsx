@@ -10,7 +10,11 @@ const Stack = createNativeStackNavigator();
 const Router = () => {
     return(
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator
+                screenOptions={{
+                        headerShown: false
+                    }}
+            >
                 <Stack.Screen name="HomeScreen" component={ Home } />
                 <Stack.Screen name="DetailScreen" component={ Detail } />
             </Stack.Navigator>
